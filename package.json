@@ -17,5 +17,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "vue": "2.5.13",
+    "vue-router": "3.0.1",
+    "vuex": "3.0.1"
   }
 }
