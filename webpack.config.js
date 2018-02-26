@@ -11,6 +11,7 @@ const webpackConfig = {
         publicPath: '/',
         chunkFilename: '[name].[ext]'
     },
+    mode: process.env.NODE_ENV || 'development',
     devtool: isProdEnv ? 'source-map' : 'cheap-module-eval-source-map',
     module: {
         rules: [ {
