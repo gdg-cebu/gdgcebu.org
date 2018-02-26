@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
+    "prebuild": "rm -rf build",
+    "build": "webpack",
+    "build:watch": "npm run prebuild && webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
