@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isProdEnv = process.env.NODE_ENV === 'production';
 
@@ -19,7 +20,12 @@ const webpackConfig = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         } ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'source/index.html')
+        })
+    ]
 };
 
 module.exports = webpackConfig;
