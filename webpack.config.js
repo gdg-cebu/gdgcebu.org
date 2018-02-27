@@ -28,6 +28,11 @@ const webpackConfig = {
             }
         } ]
     },
+    resolve: {
+        alias: {
+            images: path.resolve(__dirname, 'source/images')
+        }
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'source/index.html')
