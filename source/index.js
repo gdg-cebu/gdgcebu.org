@@ -2,6 +2,7 @@ import Vue from 'vue';
 import router from './router';
 import store from './store';
 import App from './components/gdgcebu-app.vue';
+import './stylesheets/index.css';
 
 new Vue({
     el: '#app',
