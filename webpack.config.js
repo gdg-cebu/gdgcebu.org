@@ -9,7 +9,7 @@ const webpackConfig = {
         path: path.resolve(__dirname, 'build'),
         filename: 'index.bundle.js',
         publicPath: '/',
-        chunkFilename: '[name].[ext]'
+        chunkFilename: '[name].js'
     },
     mode: process.env.NODE_ENV || 'development',
     devtool: isProdEnv ? 'source-map' : 'cheap-module-eval-source-map',
@@ -24,7 +24,8 @@ const webpackConfig = {
             test: /\.(png|jpe?g|gif)$/,
             loader: 'url-loader',
             options: {
-                limit: 1024 * 10 // 10 KB
+                limit: 1024 * 10, // 10 KB
+                name: '[name].[ext]'
             }
         } ]
     },
