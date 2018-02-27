@@ -2,7 +2,7 @@
     <header class="app-header">
         <div class="wrapper">
             <router-link :to="{ name: 'landing-page' }" class="app-logo">
-                <img src="~images/gdg-logo.png" alt="GDG Logo">
+                <img src="~images/gdgcebu-logo.png" alt="GDG Logo">
             </router-link>
 
             <nav>
