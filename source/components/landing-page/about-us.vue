@@ -52,6 +52,7 @@
 
     .left-content {
         padding-top: 2rem;
+        padding-left: 10rem;
         padding-right: 2.1rem;
         text-align: right;
     }
