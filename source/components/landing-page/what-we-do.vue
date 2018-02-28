@@ -45,6 +45,7 @@
     ul {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -52,16 +53,9 @@
 
     li {
         flex: 1 0 0;
-        min-width: 29rem;
+        min-width: 28rem;
+        margin: 0 0.6rem;
         text-align: center;
-    }
-
-    li:not(:first-child) {
-        margin-left: 0.6rem;
-    }
-
-    li:not(:last-child) {
-        margin-right: 0.6rem;
     }
 
     .icon-placeholder {
@@ -79,5 +73,12 @@
 
     p {
         color: #888;
+    }
+
+    @media (max-width: 800px) {
+        li {
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
     }
 </style>
