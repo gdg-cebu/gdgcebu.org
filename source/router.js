@@ -11,6 +11,10 @@ const routes = [ {
     path: '/events',
     component: () => import(/* webpackChunkName: 'events-page' */ './components/events-page.vue'),
     name: 'events-page'
+}, {
+    path: '/team',
+    component: () => import(/* webpackChunkName: 'team-page' */ './components/team-page.vue'),
+    name: 'team-page'
 } ];
 
 const router = new VueRouter({

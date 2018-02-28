@@ -5,7 +5,7 @@
                 <li><p>GDG Cebu</p></li>
                 <li><router-link :to="{ name: 'landing-page' }">About</router-link></li>
                 <li><router-link :to="{ name: 'events-page' }">Events</router-link></li>
-                <li><router-link :to="{ name: 'landing-page' }">Team</router-link></li>
+                <li><router-link :to="{ name: 'team-page' }">Team</router-link></li>
                 <!-- <li><router-link :to="{ name: 'landing-page' }">Code of Conduct</router-link></li>
                 <li><router-link :to="{ name: 'landing-page' }">Google Developers Page</router-link></li> -->
             </ul>

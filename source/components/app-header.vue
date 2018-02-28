@@ -8,7 +8,7 @@
             <nav>
                 <router-link :to="{ name: 'landing-page' }">About</router-link>
                 <router-link :to="{ name: 'events-page' }">Events</router-link>
-                <router-link :to="{ name: 'landing-page' }">Team</router-link>
+                <router-link :to="{ name: 'team-page' }">Team</router-link>
             </nav>
         </div>
     </header>
