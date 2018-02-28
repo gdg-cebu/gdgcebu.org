@@ -25,6 +25,7 @@ button {
 }
 
 .wrapper {
-    width: 120rem;
+    width: 90vw;
+    max-width: 120rem;
     margin: 0 auto;
 }
