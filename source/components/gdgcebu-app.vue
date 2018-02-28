@@ -16,3 +16,19 @@
         }
     };
 </script>
+
+<style scoped>
+    .gdgcebu-app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .gdgcebu-app > * {
+        flex-shrink: 0;
+    }
+
+    .app-footer {
+        margin-top: auto;
+    }
+</style>
