@@ -2,21 +2,28 @@
     <div class="upcoming-event">
         <div class="wrapper">
             <div class="content left-content">
-                <div class="image-placeholder"></div>
+                <div class="image-container">
+                    <img :src="upcomingEvent.image" :alt="upcomingEvent.title">
+                </div>
             </div>
             <div class="content right-content">
                 <p class="title">Upcoming Event</p>
-                <h1>
-                    Mobile Sites Certification Study Jam: <br>
-                    University of the Philippines Cebu
-                </h1>
+                <h1>{{ upcomingEvent.title }}</h1>
 
-                <p class="detail date">March 14, 2018 1:00-5:30 PM</p>
-                <p class="detail venue">RM 302-306, UP Cebu</p>
+                <p class="detail date">{{ upcomingEvent.date }}</p>
+                <p class="detail venue">{{ upcomingEvent.venue }}</p>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    import { mapState } from 'vuex';
+
+    export default {
+        computed: mapState(['upcomingEvent'])
+    };
+</script>
 
 <style scoped>
     .upcoming-event {
@@ -43,15 +50,26 @@
         padding-right: 10rem;
     }
 
-    .image-placeholder {
+    .image-container {
         width: 100%;
+        position: relative;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    .image-placeholder::before {
+    .image-container::before {
         content: "";
         display: block;
         padding-top: calc(100% / 16 * 9);
+    }
+
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
     }
 
     p, h1 {
