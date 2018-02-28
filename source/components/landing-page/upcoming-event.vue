@@ -33,6 +33,7 @@
 
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .content {
@@ -93,5 +94,21 @@
 
     .detail {
         color: rgba(255, 255, 255, 0.75);
+    }
+
+    @media (max-width: 800px) {
+        .content {
+            padding: 0 2.4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .content {
+            width: 100%;
+        }
+
+        .left-content {
+            margin-bottom: 2.4rem;
+        }
     }
 </style>
