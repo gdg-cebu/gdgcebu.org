@@ -2,6 +2,7 @@
     <div class="landing-page">
         <about-us></about-us>
         <what-we-do></what-we-do>
+        <upcoming-event></upcoming-event>
     </div>
 </template>
 
@@ -9,7 +10,8 @@
     export default {
         components: {
             'about-us': require('./landing-page/about-us.vue').default,
-            'what-we-do': require('./landing-page/what-we-do.vue').default
+            'what-we-do': require('./landing-page/what-we-do.vue').default,
+            'upcoming-event': require('./landing-page/upcoming-event.vue').default
         }
     };
 </script>
