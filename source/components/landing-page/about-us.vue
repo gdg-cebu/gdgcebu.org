@@ -67,4 +67,8 @@
         font-size: 2.4rem;
         font-weight: 500;
     }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 </style>
