@@ -39,6 +39,7 @@
         bottom: 0;
         z-index: -1;
         background: url("~images/about-us-bg.png") center center no-repeat;
+        background-size: cover;
         filter: brightness(0.2);
     }
 
@@ -70,5 +71,31 @@
 
     p:last-child {
         margin-bottom: 0;
+    }
+
+    @media (max-width: 800px) {
+        .content {
+            flex: initial;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+
+        .content {
+            width: 100%;
+            padding: 0;
+        }
+
+        .left-content {
+            margin-bottom: 2.4rem;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
     }
 </style>
