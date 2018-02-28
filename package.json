@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "prebuild": "rm -rf build",
-    "build": "webpack --mode development",
+    "build": "webpack",
     "build:watch": "npm run prebuild && webpack --watch",
     "build:production": "npm run prebuild && webpack",
     "dev": "webpack-serve --config webpack.config.js",
