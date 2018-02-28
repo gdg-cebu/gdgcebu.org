@@ -36,8 +36,14 @@
 
     nav a {
         display: inline-block;
-        padding: 0 2.4rem;
+        padding: 1.6rem 2.4rem;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
         font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    .router-link-exact-active {
+        border-bottom-color: #888;
     }
 </style>
