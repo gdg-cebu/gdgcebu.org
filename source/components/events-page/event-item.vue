@@ -56,4 +56,15 @@
     .detail:not(:last-child) {
         margin-right: 2.4rem;
     }
+
+    @media (max-width: 500px) {
+        .event-item {
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        img {
+            margin-bottom: 2.4rem;
+        }
+    }
 </style>
