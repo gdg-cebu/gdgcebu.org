@@ -6,17 +6,18 @@
             </div>
 
             <div class="events">
-                <event-item></event-item>
-                <event-item></event-item>
-                <event-item></event-item>
-                <event-item></event-item>
+                <event-item v-for="(event, i) in events" :key="i" :data="event"></event-item>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import { mapState } from 'vuex';
+
     export default {
+        computed: mapState(['events']),
+
         components: {
             'event-item': require('./events-page/event-item.vue').default
         }

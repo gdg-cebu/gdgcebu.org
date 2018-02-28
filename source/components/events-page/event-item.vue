@@ -3,16 +3,22 @@
         <div class="image-placeholder"></div>
 
         <div class="content">
-            <h2>Mobile Sites Certification: University of the Philippines Cebu</h2>
+            <h2>{{ data.title }}</h2>
             <div class="details">
-                <p class="detail date">March 14, 2018</p>
-                <p class="detail venue">UP Cebu</p>
+                <p class="detail date">{{ data.date }}</p>
+                <p class="detail venue">{{ data.venue }}</p>
             </div>
 
-            <p>GDG Cebu's biggest event yet. The event will focus on essential technical topics for developers, along with updates on the current development trends. The topics will range from Machine Learning, Firebase, and the Cloud, to Material Design, Android, and 2017's Web Trends. Attendees will be learning about these topics from Googlers themselves, who will be flying in from South Korea, Japan, Singapore and the US.</p>
+            <p>{{ data.description }}</p>
         </div>
     </article>
 </template>
+
+<script>
+    export default {
+        props: ['data']
+    };
+</script>
 
 <style scoped>
     .event-item {
