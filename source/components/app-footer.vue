@@ -53,16 +53,8 @@
     ul {
         flex: 1 0 0;
         padding: 0;
-        margin: 0;
+        margin: 0 0.6rem;
         list-style: none;
-    }
-
-    ul:not(:first-child) {
-        margin-left: 0.6rem;
-    }
-
-    ul:not(:last-child) {
-        margin-right: 0.6rem;
     }
 
     p {
@@ -125,5 +117,17 @@
 
     .social-link.instagram {
         background-image: url("~images/instagram.png");
+    }
+
+    @media (max-width: 800px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+
+        ul {
+            min-width: 28rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
     }
 </style>
