@@ -22,6 +22,7 @@
 
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         height: 100%;
     }
@@ -41,9 +42,32 @@
         border-bottom: 2px solid transparent;
         font-size: 1.5rem;
         text-decoration: none;
+        color: #888;
     }
 
     .router-link-exact-active {
         border-bottom-color: #888;
+        color: #333;
+    }
+
+    @media (max-width: 513px) {
+        .app-header {
+            height: initial;
+            padding-top: 2.4rem;
+        }
+
+        .wrapper {
+            justify-content: center;
+            align-items: initial;
+        }
+
+        .app-logo {
+            margin-right: 0;
+        }
+
+        nav {
+            width: 100%;
+            text-align: center;
+        }
     }
 </style>
