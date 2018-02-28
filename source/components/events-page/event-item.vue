@@ -1,6 +1,6 @@
 <template>
     <article class="event-item">
-        <div class="image-placeholder"></div>
+        <img :src="data.image" :alt="data.title">
 
         <div class="content">
             <h2>{{ data.title }}</h2>
@@ -26,11 +26,13 @@
         padding: 2.4rem;
     }
 
-    .image-placeholder {
+    img {
         flex-shrink: 0;
         width: 16rem;
         height: 9rem;
         margin-right: 2.4rem;
+        object-fit: cover;
+        object-position: center center;
         background-color: #eee;
     }
 
