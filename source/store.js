@@ -5,9 +5,9 @@ Vue.use(Vuex);
 
 const state = {
     upcomingEvent: {
-        title: 'Study Jams 2018',
-        date: 'TBA',
-        venue: 'TBA',
+        title: 'Mobile Sites Certification Study Jams: University of the Philippines Cebu',
+        date: 'March 14, 2018 1:00-5:30 PM',
+        venue: 'RM 302-306, UP Cebu',
         description: 'This event aims to certify developers with the Google Mobile Sites Certification. We will be holding the certification and exclusive in depth talks to assist in passing the certification in a limited number of schools. Join us now!',
         image: 'https://cdn.arnellebalane.com/images/gdg/about-us-bg.png'
     },
