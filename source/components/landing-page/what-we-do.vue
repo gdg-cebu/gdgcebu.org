@@ -66,6 +66,23 @@
         background-color: #eee;
     }
 
+    /* Icon placeholders, for now */
+    li:nth-child(1) .icon-placeholder {
+        background-color: #4384f4;
+    }
+
+    li:nth-child(2) .icon-placeholder {
+        background-color: #dc4437;
+    }
+
+    li:nth-child(3) .icon-placeholder {
+        background-color: #0f9d58;
+    }
+
+    li:nth-child(4) .icon-placeholder {
+        background-color: #ffc107;
+    }
+
     h2 {
         font-size: 1.8rem;
         font-weight: 500;
