@@ -12,15 +12,15 @@
 
             <ul>
                 <li><p>Get Involved</p></li>
-                <li><a href="#">Become a Sponsor</a></li>
-                <li><a href="#">Join our Facebook Group</a></li>
-                <li><a href="#">Like our Facebook Page</a></li>
+                <!-- <li><a href="#">Become a Sponsor</a></li> -->
+                <li><a href="https://facebook.com/groups/gdgcebu/">Join our Facebook Group</a></li>
+                <li><a href="https://facebook.com/GDGCebuOrg/">Like our Facebook Page</a></li>
             </ul>
 
             <ul>
                 <li><p>Resources</p></li>
-                <li><a href="#">Media Kit</a></li>
-                <li><a href="#">Photo Gallery</a></li>
+                <li><a href="https://drive.google.com/open?id=0B4-w2HEfIcgXME9vN2FTMFo0MUk">Media Kit</a></li>
+                <li><a href="https://www.facebook.com/pg/gdgcebuorg/photos/">Photo Gallery</a></li>
             </ul>
 
             <ul>
@@ -28,10 +28,10 @@
                 <li><a href="mailto:contact@gdgcebu.org">Send us an email</a></li>
                 <li><p class="dimmed">Follow our social media accounts:</p></li>
                 <li class="social-links">
-                    <a href="#" class="social-link google-plus"></a>
-                    <a href="#" class="social-link facebook"></a>
-                    <a href="#" class="social-link twitter"></a>
-                    <a href="#" class="social-link instagram"></a>
+                    <a href="https://plus.google.com/communities/101453608505646941351" class="social-link google-plus"></a>
+                    <a href="https://www.facebook.com/GDGCebuOrg/" class="social-link facebook"></a>
+                    <a href="https://twitter.com/gdgcebu" class="social-link twitter"></a>
+                    <a href="https://www.instagram.com/gdgcebu/" class="social-link instagram"></a>
                 </li>
             </ul>
         </div>
