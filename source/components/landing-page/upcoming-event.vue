@@ -54,7 +54,6 @@
     .image-container {
         width: 100%;
         position: relative;
-        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .image-container::before {

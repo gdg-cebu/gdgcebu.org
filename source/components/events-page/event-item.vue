@@ -31,9 +31,8 @@
         width: 16rem;
         height: 9rem;
         margin-right: 2.4rem;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center center;
-        background-color: #eee;
     }
 
     h2 {

@@ -9,7 +9,7 @@ const state = {
         date: 'TBA',
         venue: 'TBA',
         description: 'This event aims to certify developers with the Google Mobile Sites Certification. We will be holding the certification and exclusive in depth talks to assist in passing the certification in a limited number of schools. Join us now!',
-        image: 'https://cdn.arnellebalane.com/images/gdg/gdgcebu-logo.png'
+        image: 'https://cdn.arnellebalane.com/images/gdg/about-us-bg.png'
     },
 
     events: [ {
