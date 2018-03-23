@@ -5,20 +5,14 @@ Vue.use(Vuex);
 
 const state = {
     upcomingEvent: {
-        title: 'Mobile Sites Certification Study Jams: University of the Philippines Cebu',
-        date: 'March 14, 2018 1:00-5:30 PM',
-        venue: 'RM 302-306, UP Cebu',
-        description: 'This event aims to certify developers with the Google Mobile Sites Certification. We will be holding the certification and exclusive in depth talks to assist in passing the certification in a limited number of schools. Join us now!',
-        image: 'https://cdn.arnellebalane.com/images/gdg/about-us-bg.png'
+        title: 'Women Tech Makers Cebu 2018',
+        date: 'April 07, 2018 8:30 AM to 4:30 PM',
+        venue: 'The Company Cebu',
+        description: 'It\'s International Womens Month! Google celebrates globally the Women Techmakers Event Series around International Women\'s Day. Women Techmakers events focus on a technical women audience, showcase female technical talent, and encourage attendees to network and empower each other in the field of technology. WTM events achieve these objectives by including event components that fall under the buckets: Technical, Community, Inspirational, Leadership. Below are examples of what these buckets could include, and by no means are an exhaustive list. We encourage you to be creative and consider the resources available when choosing what event components to include in your events.',
+        image: 'https://cdn.arnellebalane.com/images/gdg/gdgcebu-logo.png'
     },
 
     events: [ {
-        title: 'Women Tech Makers Cebu 2018',
-        date: 'TBA',
-        venue: 'TBA',
-        description: 'It\'s International Womens Month! Google celebrates globally the Women Techmakers Event Series around International Women\'s Day. Women Techmakers events focus on a technical women audience, showcase female technical talent, and encourage attendees to network and empower each other in the field of technology. WTM events achieve these objectives by including event components that fall under the buckets: Technical, Community, Inspirational, Leadership. Below are examples of what these buckets could include, and by no means are an exhaustive list. We encourage you to be creative and consider the resources available when choosing what event components to include in your events.',
-        image: 'https://cdn.arnellebalane.com/images/gdg/gdgcebu-logo.png'
-    }, {
         title: 'Cloud Next Extended Cebu 2018',
         date: 'TBA',
         venue: 'TBA',
