@@ -42,7 +42,7 @@ body {
     font-size: 1.8rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #555;
+    color: var(--secondary-text-color);
 }
 
 a {
