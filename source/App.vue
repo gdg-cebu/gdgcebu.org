@@ -20,6 +20,12 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
 
+:root {
+    --primary-text-color: #222;
+    --secondary-text-color: #555;
+    --gray: rgba(27, 31, 35, 0.05);
+}
+
 *,
 *::before,
 *::after {
@@ -37,5 +43,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #555;
+}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
 }
 </style>

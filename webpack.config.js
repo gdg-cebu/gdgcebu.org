@@ -37,7 +37,7 @@ const webpackConfig = {
 
     resolve: {
         alias: {
-            images: path.resolve(__dirname, 'source/images')
+            images: path.resolve(__dirname, 'source/static/images')
         }
     },
 
