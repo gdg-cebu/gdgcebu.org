@@ -1,6 +1,10 @@
 <template>
     <header>
-        <img src="~images/gdgcebu-logo.png" alt="GDG Cebu Logo">
+        <picture>
+            <source media="(max-width: 575px)" srcset="~images/gdgcebu-logo.png">
+            <source media="(min-width: 576px)" srcset="~images/gdgcebu-lockup.png">
+            <img src="~images/gdgcebu-logo.png" alt="GDG Cebu Logo">
+        </picture>
 
         <nav>
             <router-link to="/">Home</router-link></a>
@@ -22,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 2.8rem 10rem;
+    padding: 1.2rem 2.4rem;
 }
 
 img {
@@ -32,9 +36,9 @@ img {
 
 a {
     display: inline-block;
-    padding: 0 2.4rem;
+    padding: 0 1.2rem;
     font-size: 1.4rem;
-    line-height: 4rem;
+    line-height: 3.2rem;
 
     color: var(--primary-text-color);
     border-radius: 4px;
@@ -42,5 +46,28 @@ a {
 
 a.router-link-exact-active {
     background-color: var(--gray);
+}
+
+@media (min-width: 576px) {
+    header {
+        padding: 2.8rem;
+    }
+
+    a {
+        padding: 0 2.4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 650px) {
+    header {
+        padding: 2.8rem 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 2.8rem 10rem;
+    }
 }
 </style>
