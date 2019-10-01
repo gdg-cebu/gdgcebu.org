@@ -1,7 +1,7 @@
 <template>
     <div>
         <AboutUsSection />
-        <!-- <WhatWeDoSection /> -->
+        <WhatWeDoSection />
     </div>
 </template>
 

@@ -35,28 +35,21 @@ export default {
 
 <style scoped>
 section {
-    display: flex;
-    align-items: flex-start;
-
-    padding: 10rem 12rem;
+    padding: 3.2rem;
 }
 
 img {
-    flex-grow: 1;
-    max-width: 30rem;
+    display: block;
 
-    margin-top: 9rem;
-}
-
-div {
-    flex-shrink: 0;
-    margin-left: 12rem;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto 6.4rem auto;
 }
 
 h1 {
-    margin-bottom: 5rem;
+    margin-bottom: 1.8rem;
 
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
 }
 
@@ -67,14 +60,75 @@ ul {
     list-style: none;
 }
 
-li:not(:last-child) {
-    margin-bottom: 4rem;
+li {
+    margin: 1.8rem 0;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 li h2 {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--primary-text-color);
+}
+
+@media (min-width: 576px) {
+    section {
+        padding: 5rem;
+    }
+
+    img {
+        margin-bottom: 0;
+    }
+
+    div {
+        padding: 6rem;
+        padding-top: 5rem;
+    }
+
+    h1 {
+        margin-bottom: 2.4rem;
+        font-size: 3rem;
+    }
+
+    li {
+        margin: 4rem 0;
+    }
+
+    li h2 {
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 730px) {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 10rem 5rem 15rem 5rem;
+    }
+
+    img {
+        width: 30%;
+        max-width: 30rem;
+
+        margin: 0;
+        margin-top: 9rem;
+    }
+
+    div {
+        padding: 0;
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    div {
+        margin-left: 12rem;
+    }
 }
 </style>
