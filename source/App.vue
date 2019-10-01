@@ -21,6 +21,8 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
 
 :root {
+    --gdg-blue: #4384f4;
+    --gdg-yellow: #ffc107;
     --primary-text-color: #222;
     --secondary-text-color: #555;
     --gray: rgba(27, 31, 35, 0.05);
