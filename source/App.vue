@@ -42,6 +42,7 @@ body {
     font-size: 1.8rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
     color: var(--secondary-text-color);
 }
 

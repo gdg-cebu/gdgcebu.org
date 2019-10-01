@@ -26,7 +26,7 @@ const webpackConfig = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }, {
-            test: /\.(png|jpe?g|gif)$/,
+            test: /\.(png|jpe?g|gif|svg)$/,
             loader: 'url-loader',
             options: {
                 limit: 1024 * 10, // 10 KB
