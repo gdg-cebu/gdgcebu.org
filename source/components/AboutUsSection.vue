@@ -18,15 +18,9 @@ export default {
 </script>
 
 <style scoped>
-section {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-
-    padding: 0 5rem;
-}
-
 img {
+    display: none;
+
     width: calc(100% - 10rem);
     max-width: 114rem;
     height: 100%;
@@ -38,31 +32,67 @@ img {
     left: 5rem;
     right: 5rem;
     bottom: 0;
-    z-index: -1;
 }
 
 div {
-    width: 100%;
     max-width: 55rem;
+    padding: 3.2rem;
 
-    padding: 6rem;
-    padding-top: 5rem;
-    margin: 8rem 0;
     background-color: #fff;
 }
 
 h1 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
 
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
 }
 
 p {
-    font-weight: 300;
+    margin: 1.6rem 0;
 }
 
-p:not(:last-child) {
-    margin-bottom: 1.8rem;
+p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+    section {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        padding: 0 5rem;
+    }
+
+    div {
+        padding: 6rem;
+        padding-top: 5rem;
+    }
+
+    h1 {
+        margin-bottom: 2.4rem;
+
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 650px) {
+    img {
+        display: block;
+    }
+
+    div {
+        position: relative;
+        z-index: 1;
+
+        margin: 8rem 0;
+    }
+}
+
+@media (min-width: 1450px) {
+    img {
+        max-width: calc(100% - 10rem - 55rem);
+    }
 }
 </style>

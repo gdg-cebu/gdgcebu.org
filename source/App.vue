@@ -39,7 +39,7 @@ html {
 
 body {
     font-family: "Google Sans", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.4;
@@ -50,5 +50,11 @@ a {
     font: inherit;
     color: inherit;
     text-decoration: none;
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 1.8rem;
+    }
 }
 </style>
