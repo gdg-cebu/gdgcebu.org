@@ -35,9 +35,7 @@ img {
 }
 
 div {
-    max-width: 55rem;
     padding: 3.2rem;
-
     background-color: #fff;
 }
 
@@ -72,21 +70,25 @@ p:last-child {
 
     h1 {
         margin-bottom: 2.4rem;
-
         font-size: 3rem;
+    }
+
+    p {
+        margin: 1.8rem 0;
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 730px) {
     img {
         display: block;
     }
 
     div {
+        max-width: 55rem;
+        margin: 8rem 0;
+
         position: relative;
         z-index: 1;
-
-        margin: 8rem 0;
     }
 }
 

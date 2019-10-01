@@ -59,13 +59,7 @@ a.router-link-exact-active {
     }
 }
 
-@media (min-width: 650px) {
-    header {
-        padding: 2.8rem 5rem;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 730px) {
     header {
         padding: 2.8rem 10rem;
     }
