@@ -15,8 +15,8 @@
                 <h4>Get Involved</h4>
 
                 <ul>
-                    <li><a href="#">Join our Facebook Group</a></li>
-                    <li><a href="#">Like our Facebook Page</a></li>
+                    <li><a :href="links.facebookGroup" target="_blank" rel="noopener noreferrer">Join our Facebook Group</a></li>
+                    <li><a :href="links.facebookPage" target="_blank" rel="noopener noreferrer">Like our Facebook Page</a></li>
                 </ul>
             </div>
 
@@ -24,8 +24,8 @@
                 <h4>Resources</h4>
 
                 <ul>
-                    <li><a href="#">Media Kit</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a :href="links.mediaKit" target="_blank" rel="noopener noreferrer">Media Kit</a></li>
+                    <li><a :href="links.photoGallery" target="_blank" rel="noopener noreferrer">Photo Gallery</a></li>
                 </ul>
             </div>
 
@@ -33,7 +33,7 @@
                 <h4>Contact Us</h4>
 
                 <ul>
-                    <li><a href="#">Send us an email</a></li>
+                    <li><a :href="mailtoLink">Send us an email</a></li>
                 </ul>
             </div>
         </div>
@@ -43,8 +43,18 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
+
 export default {
-    name: 'TheFooter'
+    name: 'TheFooter',
+
+    computed: {
+        ...mapState(['links']),
+
+        mailtoLink() {
+            return `mailto:${this.links.email}`;
+        }
+    }
 };
 </script>
 

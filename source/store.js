@@ -3,12 +3,14 @@ import Vuex from 'vuex';
 
 import team from './data/team.json';
 import events from './data/events.json';
+import links from './data/links.json';
 
 Vue.use(Vuex);
 
 const state = {
     team,
-    events
+    events,
+    links
 };
 
 const getters = {
