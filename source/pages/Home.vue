@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <main>
         <AboutUsSection />
         <WhatWeDoSection />
         <FeaturedEventSection />
-    </div>
+    </main>
 </template>
 
 <script>

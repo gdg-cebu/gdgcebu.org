@@ -78,10 +78,6 @@ li {
     margin: 8px 0;
 }
 
-li a {
-    color: var(--secondary-text-color);
-}
-
 img {
     display: block;
     max-height: 6.4rem;
