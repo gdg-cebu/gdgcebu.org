@@ -50,6 +50,7 @@ h1 {
     margin-bottom: 1.8rem;
 
     font-size: 2rem;
+    text-align: center;
     color: var(--primary-text-color);
 }
 
@@ -92,6 +93,7 @@ li h2 {
     h1 {
         margin-bottom: 2.4rem;
         font-size: 3rem;
+        text-align: left;
     }
 
     li {
