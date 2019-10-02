@@ -12,8 +12,8 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
 import TeamMember from '@/components/TeamMember.vue';
-import team from '@/data/team.json';
 
 export default {
     name: 'Team',
@@ -22,11 +22,7 @@ export default {
         TeamMember
     },
 
-    data() {
-        return {
-            team
-        };
-    }
+    computed: mapState(['team'])
 };
 </script>
 

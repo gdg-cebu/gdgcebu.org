@@ -4,16 +4,16 @@
             <h1>Featured event</h1>
 
             <article>
-                <h2>GDG DevFest Cebu 2019</h2>
-                <p>DevFest 2019 brings together world-class experts in Android, Web, and Cloud technologies  for a day of sessions, workshops, and showcases.</p>
+                <h2>{{featuredEvent.title}}</h2>
+                <p>{{featuredEvent.description}}</p>
 
                 <div class="details">
                     <ul>
-                        <li>November 16, 2019</li>
-                        <li>J Centre Mall, Mandaue City</li>
+                        <li>{{featuredEventDate}}</li>
+                        <li>{{featuredEvent.venue}}</li>
                     </ul>
 
-                    <a href="#">
+                    <a :href="featuredEvent.url" target="_blank" rel="noopener noreferrer">
                         <img src="~images/arrow.svg" alt="">
                         Learn more
                     </a>
@@ -22,14 +22,25 @@
         </div>
 
         <div class="image">
-            <img src="/static/images/events/devfest19.jpg" alt="GDG DevFest Cebu 2019">
+            <img :src="featuredEvent.image" :alt="featuredEvent.title">
         </div>
     </section>
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
+import dayjs from 'dayjs';
+
 export default {
-    name: 'FeaturedEventSection'
+    name: 'FeaturedEventSection',
+
+    computed: {
+        ...mapGetters(['featuredEvent']),
+
+        featuredEventDate() {
+            return dayjs(this.featuredEvent.date).format('MMMM D, YYYY');
+        }
+    }
 };
 </script>
 
