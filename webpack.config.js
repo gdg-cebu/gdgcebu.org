@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const isProdEnv = process.env.NODE_ENV === 'production';
@@ -47,7 +48,12 @@ const webpackConfig = {
 
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'source/index.html')
-        })
+        }),
+
+        new CopyWebpackPlugin([{
+            from: 'source/static/images/events',
+            to: 'static/images/events'
+        }])
     ]
 };
 

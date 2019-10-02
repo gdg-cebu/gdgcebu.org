@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "prebuild": "rm -rf build",
     "build": "webpack",
-    "serve": "webpack-dev-server --history-api-fallback --hot"
+    "serve": "webpack-dev-server --history-api-fallback --hot --write-to-disk"
   },
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
   "license": "MIT",
@@ -17,6 +17,8 @@
     "vuex": "3.1.1"
   },
   "devDependencies": {
+    "commitizen": "4.0.3",
+    "copy-webpack-plugin": "5.0.4",
     "css-loader": "3.2.0",
     "cz-conventional-changelog": "3.0.2",
     "file-loader": "4.2.0",

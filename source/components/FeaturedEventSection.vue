@@ -22,7 +22,7 @@
         </div>
 
         <div class="image">
-            <img src="~images/devfest-banner.jpg" alt="GDG DevFest Cebu 2019">
+            <img src="/static/images/events/devfest19.jpg" alt="GDG DevFest Cebu 2019">
         </div>
     </section>
 </template>
