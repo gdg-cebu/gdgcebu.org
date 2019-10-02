@@ -31,7 +31,7 @@ header {
 
 img {
     display: block;
-    max-height: 6.4rem;
+    max-height: 4rem;
 }
 
 a {
@@ -51,6 +51,10 @@ a.router-link-exact-active {
 @media (min-width: 576px) {
     header {
         padding: 2.8rem;
+    }
+
+    img {
+        max-height: 6.4rem;
     }
 
     a {
