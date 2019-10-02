@@ -2,17 +2,20 @@
     <div>
         <TheHeader />
         <router-view></router-view>
+        <TheFooter />
     </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
+import TheFooter from './components/TheFooter.vue';
 
 export default {
     name: 'App',
 
     components: {
-        TheHeader
+        TheHeader,
+        TheFooter
     }
 };
 </script>
@@ -23,8 +26,8 @@ export default {
 :root {
     --gdg-blue: #4384f4;
     --gdg-yellow: #ffc107;
-    --primary-text-color: #222;
-    --secondary-text-color: #555;
+    --primary-text-color: #444;
+    --secondary-text-color: #777;
     --gray: rgba(27, 31, 35, 0.05);
 }
 
@@ -52,6 +55,11 @@ a {
     font: inherit;
     color: inherit;
     text-decoration: none;
+}
+
+.wrapper {
+    max-width: 145rem;
+    margin: 0 auto;
 }
 
 @media (min-width: 576px) {

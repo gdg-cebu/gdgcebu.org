@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="wrapper">
         <div class="content">
             <h1>Featured event</h1>
 
@@ -172,9 +172,6 @@ article p {
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-
-        max-width: 145rem;
-        margin: 0 auto;
     }
 
     .content {
