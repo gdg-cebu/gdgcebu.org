@@ -4,12 +4,29 @@
             <h1>Team</h1>
             <p>These are the people that make all our awesome events possible, so we can all have a place to connect with other developers in our community.</p>
         </header>
+
+        <div>
+            <TeamMember v-for="member in team" :key="member.name" :data="member" />
+        </div>
     </main>
 </template>
 
 <script>
+import TeamMember from '@/components/TeamMember.vue';
+import team from '@/data/team.json';
+
 export default {
-    name: 'Team'
+    name: 'Team',
+
+    components: {
+        TeamMember
+    },
+
+    data() {
+        return {
+            team
+        };
+    }
 };
 </script>
 
@@ -28,6 +45,12 @@ h1 {
 header {
     padding-top: 3rem;
     padding-bottom: 4rem;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-gap: 1rem;
 }
 
 @media (min-width: 576px) {
