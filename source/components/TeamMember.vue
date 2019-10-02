@@ -1,6 +1,6 @@
 <template>
     <article>
-        <div class="image"></div>
+        <img :src="data.photo" :alt="data.name">
 
         <h1>{{data.name}}</h1>
         <h2>{{data.role}}</h2>
@@ -49,14 +49,12 @@ article {
     text-align: center;
 }
 
-.image {
+img {
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
     margin-bottom: 4rem;
-
     border-radius: 50%;
-    background-color: #eee;
 }
 
 h1,

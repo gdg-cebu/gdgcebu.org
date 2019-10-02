@@ -53,6 +53,9 @@ const webpackConfig = {
         new CopyWebpackPlugin([{
             from: 'source/static/images/events',
             to: 'static/images/events'
+        }, {
+            from: 'source/static/images/team',
+            to: 'static/images/team'
         }])
     ]
 };
