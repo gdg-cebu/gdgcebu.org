@@ -15,8 +15,12 @@
         <section class="past-events">
             <h1>Past Events</h1>
 
-            <div v-for="event in pastEvents">
-                {{event}}
+            <div>
+                <PastEvent
+                    v-for="event in pastEvents"
+                    :key="event.title"
+                    :data="event"
+                />
             </div>
         </section>
     </main>
@@ -25,12 +29,14 @@
 <script>
 import {mapGetters} from 'vuex';
 import UpcomingEvent from '@/components/UpcomingEvent.vue';
+import PastEvent from '@/components/PastEvent.vue';
 
 export default {
     name: 'Events',
 
     components: {
-        UpcomingEvent
+        UpcomingEvent,
+        PastEvent
     },
 
     computed: mapGetters(['upcomingEvents', 'pastEvents'])
@@ -44,6 +50,8 @@ main {
 
 h1 {
     max-width: 45rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 
     font-size: 2rem;
     color: var(--primary-text-color);
@@ -55,6 +63,12 @@ h1 {
 
 .past-events {
     margin-top: 5rem;
+}
+
+.past-events div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem 12rem;
 }
 
 @media (min-width: 576px) {
