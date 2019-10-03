@@ -1,0 +1,25 @@
+[
+  {
+    "title": "GDG DevFest Cebu 2019",
+    "description": "DevFest 2019 brings together world-class experts in Android, Web, and Cloud technologies  for a day of sessions, workshops, and showcases.",
+    "date": "2019-11-16",
+    "venue": "Golden Peak Hotel, Cebu City",
+    "url": "https://www.meetup.com/GDGCebu/events/263547887/",
+    "image": "/static/images/events/devfest19.jpg",
+    "featured": true
+  },
+  {
+    "title": "Google I/O Extended Cebu 2019",
+    "date": "July 20, 2019",
+    "venue": "J Centre Mall, Mandaue City",
+    "url": "https://iox.gdgcebu.org",
+    "image": "/static/images/events/iox19.jpg"
+  },
+  {
+    "title": "Women TechMakers Cebu 2019",
+    "date": "March 9, 2019",
+    "venue": "The Company Cebu - IT Park, Cebu City",
+    "url": "https://www.meetup.com/GDGCebu/events/258521076/",
+    "image": "/static/images/events/wtm19.jpg"
+  }
+]

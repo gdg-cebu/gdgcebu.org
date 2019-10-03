@@ -3,23 +3,18 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-const routes = [ {
-    path: '/',
-    component: () => import(/* webpackChunkName: 'landing-page' */ './components/landing-page.vue'),
-    name: 'landing-page'
+const routes = [{
+    path: '',
+    component: () => import('./pages/Home.vue')
 }, {
-    path: '/events',
-    component: () => import(/* webpackChunkName: 'events-page' */ './components/events-page.vue'),
-    name: 'events-page'
+    path: '/events/',
+    component: () => import('./pages/Events.vue')
 }, {
-    path: '/team',
-    component: () => import(/* webpackChunkName: 'team-page' */ './components/team-page.vue'),
-    name: 'team-page'
-} ];
+    path: '/team/',
+    component: () => import('./pages/Team.vue')
+}];
 
-const router = new VueRouter({
+export default new VueRouter({
     routes,
     mode: 'history'
 });
-
-export default router;

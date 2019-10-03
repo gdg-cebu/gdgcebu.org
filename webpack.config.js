@@ -1,18 +1,25 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const isProdEnv = process.env.NODE_ENV === 'production';
 
 const webpackConfig = {
     entry: path.resolve(__dirname, 'source/index.js'),
+
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'index.bundle.js',
+        filename: 'index.js',
         publicPath: '/',
         chunkFilename: '[name].js'
     },
+
     mode: process.env.NODE_ENV || 'development',
+
     devtool: isProdEnv ? 'source-map' : 'cheap-module-eval-source-map',
+
     module: {
         rules: [ {
             test: /\.vue$/,
@@ -21,7 +28,7 @@ const webpackConfig = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }, {
-            test: /\.(png|jpe?g|gif)$/,
+            test: /\.(png|jpe?g|gif|svg)$/,
             loader: 'url-loader',
             options: {
                 limit: 1024 * 10, // 10 KB
@@ -29,15 +36,36 @@ const webpackConfig = {
             }
         } ]
     },
+
     resolve: {
         alias: {
-            images: path.resolve(__dirname, 'source/images')
+            '@': path.resolve(__dirname, 'source'),
+            images: path.resolve(__dirname, 'source/static/images')
         }
     },
+
     plugins: [
+        new VueLoaderPlugin(),
+
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'source/index.html')
-        })
+        }),
+
+        new CopyWebpackPlugin([{
+            from: 'source/static/images/events',
+            to: 'static/images/events'
+        }, {
+            from: 'source/static/images/team',
+            to: 'static/images/team'
+        }, {
+            from: 'source/static/images/favicon.png',
+            to: 'static/images/favicon.png'
+        }, {
+            from: 'source/static/images/social-share.jpg',
+            to: 'static/images/social-share.jpg'
+        }]),
+
+        new ImageminWebpackPlugin()
     ]
 };
 
