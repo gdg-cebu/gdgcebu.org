@@ -81,12 +81,26 @@ h1 {
 
         font-size: 3rem;
     }
+
+    .past-events div {
+        margin: 0 -4rem;
+    }
 }
 
 @media (min-width: 730px) {
     .past-events div {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .past-events div {
         grid-gap: 5rem 12rem;
+    }
+
+    .past-events div {
+        margin: 0;
     }
 }
 </style>

@@ -85,10 +85,17 @@ img {
 @media (min-width: 730px) {
     article {
         display: flex;
+        align-items: flex-start;
     }
 
     img {
+        flex-grow: 1;
+        width: 30%;
         max-width: 52rem;
+    }
+
+    .details {
+        flex-grow: 1;
     }
 }
 </style>
