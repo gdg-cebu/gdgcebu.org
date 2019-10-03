@@ -56,6 +56,9 @@ const webpackConfig = {
         }, {
             from: 'source/static/images/team',
             to: 'static/images/team'
+        }, {
+            from: 'source/static/images/favicon.png',
+            to: 'static/images/favicon.png'
         }])
     ]
 };
