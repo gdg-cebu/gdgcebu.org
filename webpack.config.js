@@ -60,6 +60,9 @@ const webpackConfig = {
         }, {
             from: 'source/static/images/favicon.png',
             to: 'static/images/favicon.png'
+        }, {
+            from: 'source/static/images/social-share.jpg',
+            to: 'static/images/social-share.jpg'
         }]),
 
         new ImageminWebpackPlugin()
