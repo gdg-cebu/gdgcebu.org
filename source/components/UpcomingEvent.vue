@@ -10,6 +10,10 @@
                 <li>{{eventDate}}</li>
                 <li>{{data.venue}}</li>
             </ul>
+
+            <a :href="data.url" target="_blank" rel="noopener noreferrer">
+                Visit event
+            </a>
         </div>
     </article>
 </template>
@@ -69,6 +73,15 @@ img {
 .details li {
     font-size: 1.6rem;
     color: var(--primary-text-color);
+}
+
+.details a {
+    display: inline-block;
+    margin-top: 2.4rem;
+    margin-left: 4rem;
+
+    font-size: 1.6rem;
+    color: var(--gdg-blue);
 }
 
 @media (min-width: 576px) {
