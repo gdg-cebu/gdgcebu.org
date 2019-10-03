@@ -21,19 +21,5 @@
     "venue": "The Company Cebu - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/258521076/",
     "image": "/static/images/events/wtm19.jpg"
-  },
-  {
-    "title": "Google I/O Extended Cebu 2019",
-    "date": "July 20, 2019",
-    "venue": "J Centre Mall, Mandaue City",
-    "url": "https://iox.gdgcebu.org",
-    "image": "/static/images/events/iox19.jpg"
-  },
-  {
-    "title": "Women TechMakers Cebu 2019",
-    "date": "March 9, 2019",
-    "venue": "The Company Cebu - IT Park, Cebu City",
-    "url": "https://www.meetup.com/GDGCebu/events/258521076/",
-    "image": "/static/images/events/wtm19.jpg"
   }
 ]

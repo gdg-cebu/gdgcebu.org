@@ -1,6 +1,8 @@
 <template>
     <article>
-        <img :src="data.image" :alt="data.title">
+        <div class="image">
+            <img :src="data.image" :alt="data.title">
+        </div>
 
         <div class="details">
             <h2>{{data.title}}</h2>
@@ -35,9 +37,40 @@ export default {
 </script>
 
 <style scoped>
+.image {
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+article:nth-child(4n+1) .image::after {
+    background-color: rgba(67, 132, 244, 0.4);
+}
+
+article:nth-child(4n+2) .image::after {
+    background-color: rgba(255, 193, 2, 0.4);
+}
+
+article:nth-child(4n+3) .image::after {
+    background-color: rgba(220, 68, 55, 0.4);
+}
+
+article:nth-child(4n+4) .image::after {
+    background-color: rgba(15, 157, 88, 0.4);
+}
+
 img {
     display: block;
     width: 100%;
+
+    filter: saturate(0) brightness(2.5);
 }
 
 .details {
