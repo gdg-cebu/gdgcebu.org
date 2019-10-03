@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const isProdEnv = process.env.NODE_ENV === 'production';
@@ -59,7 +60,9 @@ const webpackConfig = {
         }, {
             from: 'source/static/images/favicon.png',
             to: 'static/images/favicon.png'
-        }])
+        }]),
+
+        new ImageminWebpackPlugin()
     ]
 };
 
