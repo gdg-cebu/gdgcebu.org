@@ -1,24 +1,37 @@
 <template>
     <main class="wrapper">
-        <h1>Upcoming Events</h1>
+        <section class="upcoming-events">
+            <h1>Upcoming Events</h1>
 
-        <div v-for="event in upcomingEvents">
-            {{event}}
-        </div>
+            <div>
+                <UpcomingEvent
+                    v-for="event in upcomingEvents"
+                    :key="event.title"
+                    :data="event"
+                />
+            </div>
+        </section>
 
-        <h1>Past Events</h1>
+        <section class="past-events">
+            <h1>Past Events</h1>
 
-        <div v-for="event in pastEvents">
-            {{event}}
-        </div>
+            <div v-for="event in pastEvents">
+                {{event}}
+            </div>
+        </section>
     </main>
 </template>
 
 <script>
 import {mapGetters} from 'vuex';
+import UpcomingEvent from '@/components/UpcomingEvent.vue';
 
 export default {
     name: 'Events',
+
+    components: {
+        UpcomingEvent
+    },
 
     computed: mapGetters(['upcomingEvents', 'pastEvents'])
 };
@@ -31,17 +44,23 @@ main {
 
 h1 {
     max-width: 45rem;
-    margin-bottom: 1.8rem;
 
     font-size: 2rem;
     color: var(--primary-text-color);
+}
+
+.upcoming-events div {
+    margin: 0 -4rem;
+}
+
+.past-events {
+    margin-top: 5rem;
 }
 
 @media (min-width: 576px) {
     h1 {
         padding-top: 5rem;
         padding-bottom: 6rem;
-        margin-bottom: 2.4rem;
 
         font-size: 3rem;
     }
