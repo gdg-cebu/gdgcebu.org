@@ -67,8 +67,7 @@ h1 {
 
 .past-events div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem 12rem;
+    grid-template-columns: 1fr;
 }
 
 @media (min-width: 576px) {
@@ -81,6 +80,13 @@ h1 {
         padding-bottom: 6rem;
 
         font-size: 3rem;
+    }
+}
+
+@media (min-width: 730px) {
+    .past-events div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem 12rem;
     }
 }
 </style>

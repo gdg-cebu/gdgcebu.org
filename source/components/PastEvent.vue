@@ -45,14 +45,24 @@ img {
 }
 
 .details h2 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
 
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
 }
 
 .details li {
-    margin: 8px 0;
     font-size: 1.6rem;
+}
+
+@media (min-width: 576px) {
+    .details h2 {
+        margin-bottom: 2.4rem;
+        font-size: 2.4rem;
+    }
+
+    .details li {
+        margin: 8px 0;
+    }
 }
 </style>
