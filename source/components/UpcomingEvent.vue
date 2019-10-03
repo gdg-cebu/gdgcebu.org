@@ -37,15 +37,13 @@ export default {
 
 <style scoped>
 article {
-    display: flex;
-
     padding: 4rem;
     background-color: #fafafa;
 }
 
 img {
     display: block;
-    max-width: 52rem;
+    width: 100%;
     margin-right: 5rem;
 }
 
@@ -54,9 +52,9 @@ img {
 }
 
 .details h2 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
 
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
 }
 
@@ -69,9 +67,28 @@ img {
 }
 
 .details li {
-    margin: 8px 0;
-
     font-size: 1.6rem;
     color: var(--primary-text-color);
+}
+
+@media (min-width: 576px) {
+    .details h2 {
+        margin-bottom: 2.4rem;
+        font-size: 2.4rem;
+    }
+
+    .details li {
+        margin: 8px 0;
+    }
+}
+
+@media (min-width: 730px) {
+    article {
+        display: flex;
+    }
+
+    img {
+        max-width: 52rem;
+    }
 }
 </style>

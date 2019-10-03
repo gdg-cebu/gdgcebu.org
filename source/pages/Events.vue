@@ -72,17 +72,15 @@ h1 {
 }
 
 @media (min-width: 576px) {
+    main {
+        padding: 0 11rem;
+    }
+
     h1 {
         padding-top: 5rem;
         padding-bottom: 6rem;
 
         font-size: 3rem;
-    }
-}
-
-@media (min-width: 730px) {
-    main {
-        padding: 0 10rem;
     }
 }
 </style>

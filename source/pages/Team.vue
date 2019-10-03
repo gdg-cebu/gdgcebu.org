@@ -50,6 +50,10 @@ div {
 }
 
 @media (min-width: 576px) {
+    main {
+        padding: 0 11rem;
+    }
+
     header {
         max-width: 45rem;
         padding-top: 5rem;
@@ -59,12 +63,6 @@ div {
     h1 {
         margin-bottom: 2.4rem;
         font-size: 3rem;
-    }
-}
-
-@media (min-width: 730px) {
-    main {
-        padding: 0 10rem;
     }
 }
 </style>
