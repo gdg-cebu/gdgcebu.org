@@ -1,6 +1,6 @@
 <template>
     <section>
-        <img src="~images/hero-image.jpg" alt="Hero image">
+        <img src="~images/hero-image.jpg" alt="Hero image" loading="lazy" height="1255" width="579">
 
         <div>
             <h1>About us</h1>

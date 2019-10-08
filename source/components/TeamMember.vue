@@ -1,6 +1,6 @@
 <template>
     <article>
-        <img :src="data.photo" :alt="data.name">
+        <img :src="data.photo" :alt="data.name" loading="lazy" width="100" height="100">
 
         <h1>{{data.name}}</h1>
         <h2>{{data.role}}</h2>

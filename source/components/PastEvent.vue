@@ -1,7 +1,7 @@
 <template>
     <article>
         <div class="image">
-            <img :src="data.image" :alt="data.title">
+            <img :src="data.image" :alt="data.title" loading="lazy" width="555" height="305">
         </div>
 
         <div class="details">
@@ -73,6 +73,7 @@ article:nth-child(4n+4) .image::after {
 img {
     display: block;
     width: 100%;
+    height: 100%;
 
     filter: saturate(0) brightness(2.5);
 }

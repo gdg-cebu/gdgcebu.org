@@ -1,6 +1,6 @@
 <template>
     <article>
-        <img :src="data.image" :alt="data.title">
+        <img :src="data.image" :alt="data.title" loading="lazy" width="520" height="260">
 
         <div class="details">
             <h2>{{data.title}}</h2>
@@ -48,6 +48,7 @@ article {
 img {
     display: block;
     width: 100%;
+    height: 100%;
     margin-right: 5rem;
 }
 

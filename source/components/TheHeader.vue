@@ -3,7 +3,7 @@
         <picture>
             <source media="(max-width: 575px)" srcset="~images/gdgcebu-logo.png">
             <source media="(min-width: 576px)" srcset="~images/gdgcebu-lockup.png">
-            <img src="~images/gdgcebu-logo.png" alt="GDG Cebu Logo">
+            <img src="~images/gdgcebu-logo.png" alt="GDG Cebu Logo" loading="lazy" width="187" height="64">
         </picture>
 
         <nav>
