@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <img src="~images/gdgcebu-lockup.png" alt="GDG Cebu Logo">
+        <img src="~images/gdgcebu-lockup.png" alt="GDG Cebu Logo" loading="lazy" width="187" height="64">
     </footer>
 </template>
 

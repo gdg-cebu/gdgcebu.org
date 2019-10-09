@@ -22,7 +22,7 @@
         </div>
 
         <div class="image">
-            <img :src="featuredEvent.image" :alt="featuredEvent.title">
+            <img :src="featuredEvent.image" :alt="featuredEvent.title" loading="lazy" width="620" height="310">
         </div>
     </section>
 </template>
@@ -112,6 +112,7 @@ article p {
 .image img {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 576px) {

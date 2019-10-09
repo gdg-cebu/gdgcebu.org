@@ -1,6 +1,6 @@
 <template>
     <section>
-        <img src="~images/illustration.svg" alt="">
+        <img src="~images/illustration.svg" alt="" loading="lazy" width="300" height="264">
 
         <div>
             <h1>What we do</h1>
