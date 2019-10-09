@@ -34,8 +34,6 @@
     "role": "Sponsorship and Partnership Lead",
     "photo": "/static/images/team/jenny-gumolon.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
       "linkedin": "https://www.linkedin.com/in/jengum/"
     }
   },
@@ -44,8 +42,6 @@
     "role": "Program Associate",
     "photo": "/static/images/team/rhodchel-espanola.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
       "linkedin": "https://www.linkedin.com/in/rhodchel-lhuven-espa%C3%B1ola-746408153/"
     }
   },
@@ -54,8 +50,7 @@
     "role": "Volunteers Manager",
     "photo": "/static/images/team/francis-jigssy-galua.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
+      "twitter": "https://twitter.com/francisjigssy",
       "linkedin": "https://www.linkedin.com/in/francis-jigssy/"
     }
   },
@@ -64,8 +59,7 @@
     "role": "Design Lead",
     "photo": "/static/images/team/john-corky-hunter.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
+      "twitter": "https://twitter.com/corky_john",
       "linkedin": "https://www.linkedin.com/in/john-corky-hunter-876763181/"
     }
   },
@@ -74,8 +68,7 @@
     "role": "Media Lead",
     "photo": "/static/images/team/james-gulles.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
+      "github": "https://github.com/TheWanderer0",
       "linkedin": "https://www.linkedin.com/in/mc-james-gulles-2b67a8121/"
     }
   },
@@ -84,8 +77,8 @@
     "role": "Logistics Lead",
     "photo": "/static/images/team/ryan-viajedor.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
+      "github": "https://github.com/ryanmoradasviajedor",
+      "twitter": "https://twitter.com/ryviajedor",
       "linkedin": "https://www.linkedin.com/in/ryanviajedor/"
     }
   },
@@ -104,8 +97,7 @@
     "role": "Resident Flutter Expert",
     "photo": "/static/images/team/sean-urgel.jpg",
     "links": {
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/",
+      "github": "https://github.com/SeanningTatum",
       "linkedin": "https://www.linkedin.com/in/sean-urgel/"
     }
   },
