@@ -31,6 +31,7 @@ header {
 
 img {
     display: block;
+    width: auto;
     max-height: 4rem;
 }
 
