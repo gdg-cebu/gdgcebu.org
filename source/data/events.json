@@ -1,67 +1,90 @@
 [
   {
+    "title": "web.dev LIVE Cebu",
+    "description": "Learn about what's new in the Web from the recently-concluded web.dev LIVE online conference.",
+    "date": "2020-08-01",
+    "venue": "Online",
+    "url": "https://www.meetup.com/GDGCebu/events/271473987/",
+    "image": "/static/images/events/webdev-live-cebu.png",
+    "featured": true
+  },
+  {
+    "title": "Angular + Firebase On Air",
+    "date": "2020-07-25",
+    "venue": "Online",
+    "url": "https://www.meetup.com/GDGCebu/events/271797685/",
+    "image": "/static/images/events/angular-firebase-on-air.jpg"
+  },
+  {
     "title": "GDG DevFest Cebu 2019",
     "description": "DevFest 2019 brings together world-class experts in Android, Web, and Cloud technologies  for a day of sessions, workshops, and showcases.",
     "date": "2019-11-16",
     "venue": "Golden Peak Hotel, Cebu City",
     "url": "https://devfest.gdgcebu.org",
-    "image": "/static/images/events/devfest19.jpg",
-    "featured": true
+    "image": "/static/images/events/devfest19.jpg"
   },
   {
     "title": "Google I/O Extended Cebu 2019",
     "date": "July 20, 2019",
     "venue": "J Centre Mall, Mandaue City",
     "url": "https://iox.gdgcebu.org",
-    "image": "/static/images/events/iox19.jpg"
+    "image": "/static/images/events/iox19.jpg",
+    "colorize": true
   },
   {
     "title": "Women TechMakers Cebu 2019",
     "date": "March 9, 2019",
     "venue": "The Company Cebu - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/258521076/",
-    "image": "/static/images/events/wtm19.jpg"
+    "image": "/static/images/events/wtm19.jpg",
+    "colorize": true
   },
   {
     "title": "[WTM Cebu] Public Speaking 101",
     "date": "September 14, 2019",
     "venue": "KMC Solutions - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/263416453/",
-    "image": "/static/images/events/publicspeaking.jpg"
+    "image": "/static/images/events/publicspeaking.jpg",
+    "colorize": true
   },
   {
     "title": "WTM CEBU: #IamRemarkable",
     "date": "June 29, 2019",
     "venue": "Inspire Team - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/261455907/",
-    "image": "/static/images/events/iamremarkable19.jpg"
+    "image": "/static/images/events/iamremarkable19.jpg",
+    "colorize": true
   },
   {
     "title": "Machine Learning & TensorFlow Meetup",
     "date": "June 18, 2019",
     "venue": "The Company Cebu - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/261948554/",
-    "image": "/static/images/events/mltfmeetup19.jpg"
+    "image": "/static/images/events/mltfmeetup19.jpg",
+    "colorize": true
   },
   {
     "title": "Next '19 Extended Cebu",
     "date": "May 11, 2019",
     "venue": "Mabuhay Tower - IT Park, Cebu City",
     "url": "https://www.meetup.com/GDGCebu/events/260932605/",
-    "image": "/static/images/events/nextextended.jpg"
+    "image": "/static/images/events/nextextended.jpg",
+    "colorize": true
   },
   {
     "title": "DevFest x BizFest Cebu 2018",
     "date": "October 27, 2018",
     "venue": "Summit Galleria Cebu",
     "url": "https://www.meetup.com/GDGCebu/events/253369852/",
-    "image": "/static/images/events/devfestxbizfest18.jpg"
+    "image": "/static/images/events/devfestxbizfest18.jpg",
+    "colorize": true
   },
   {
     "title": "Google I/O Extended Cebu 2018",
     "date": "July 21, 2018",
     "venue": "University of San Carlos - Talamban Campus",
     "url": "https://www.meetup.com/GDGCebu/events/251019160/",
-    "image": "/static/images/events/iox18.jpg"
+    "image": "/static/images/events/iox18.jpg",
+    "colorize": true
   }
 ]

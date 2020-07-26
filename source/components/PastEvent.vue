@@ -1,7 +1,13 @@
 <template>
     <article>
-        <div class="image">
-            <img :src="data.image" :alt="data.title" loading="lazy" width="555" height="305">
+        <div class="image" :class="{colorize: data.colorize}">
+            <img
+              :src="data.image"
+              :alt="data.title"
+              loading="lazy"
+              width="555"
+              height="305"
+            >
         </div>
 
         <div class="details">
@@ -45,7 +51,7 @@ export default {
     position: relative;
 }
 
-.image::after {
+.image.colorize::after {
     content: "";
     position: absolute;
     top: 0;
@@ -74,8 +80,10 @@ img {
     display: block;
     width: 100%;
     height: 100%;
+}
 
-    filter: saturate(0) brightness(2.5);
+.image.colorize img {
+  filter: saturate(0) brightness(2.5);
 }
 
 .details {
