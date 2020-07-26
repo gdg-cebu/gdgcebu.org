@@ -1,6 +1,12 @@
 <template>
     <article>
-        <img :src="data.image" :alt="data.title" loading="lazy" width="520" height="260">
+        <img
+            :src="imageUrl"
+            :alt="data.title"
+            loading="lazy"
+            width="520"
+            height="260"
+        >
 
         <div class="details">
             <h2>{{data.title}}</h2>
@@ -20,6 +26,7 @@
 
 <script>
 import dayjs from 'dayjs';
+import optimizedImageUrl from '@/lib/optimized-image-url';
 
 export default {
     name: 'UpcomingEvent',
@@ -34,6 +41,10 @@ export default {
     computed: {
         eventDate() {
             return dayjs(this.data.date).format('MMMM D, YYYY');
+        },
+
+        imageUrl() {
+            return optimizedImageUrl(this.data.image, ['w_520', 'h_260', 'q_80', 'c_fill']);
         }
     }
 };

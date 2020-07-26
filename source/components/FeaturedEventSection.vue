@@ -22,7 +22,13 @@
         </div>
 
         <div class="image">
-            <img :src="featuredEvent.image" :alt="featuredEvent.title" loading="lazy" width="620" height="310">
+            <img
+                :src="featuredEventImage"
+                :alt="featuredEvent.title"
+                loading="lazy"
+                width="620"
+                height="310"
+            >
         </div>
     </section>
 </template>
@@ -30,6 +36,7 @@
 <script>
 import {mapGetters} from 'vuex';
 import dayjs from 'dayjs';
+import optimizedImageUrl from '@/lib/optimized-image-url';
 
 export default {
     name: 'FeaturedEventSection',
@@ -39,6 +46,10 @@ export default {
 
         featuredEventDate() {
             return dayjs(this.featuredEvent.date).format('MMMM D, YYYY');
+        },
+
+        featuredEventImage() {
+            return optimizedImageUrl(this.featuredEvent.image, ['w_620', 'h_310', 'q_80', 'c_fill']);
         }
     }
 };

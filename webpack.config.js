@@ -1,4 +1,6 @@
+require('dotenv').config();
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
@@ -45,6 +47,14 @@ const webpackConfig = {
     },
 
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env': JSON.stringify({
+                NODE_ENV: process.env.NODE_ENV,
+                BASE_URL: process.env.BASE_URL,
+                CLOUDINARY_BASE_URL: process.env.CLOUDINARY_BASE_URL
+            })
+        }),
+
         new VueLoaderPlugin(),
 
         new HtmlWebpackPlugin({

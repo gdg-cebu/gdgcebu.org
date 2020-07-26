@@ -2,11 +2,11 @@
     <article>
         <div class="image" :class="{colorize: data.colorize}">
             <img
-              :src="imageUrl"
-              :alt="data.title"
-              loading="lazy"
-              width="555"
-              height="305"
+                :src="imageUrl"
+                :alt="data.title"
+                loading="lazy"
+                width="555"
+                height="305"
             >
         </div>
 
@@ -27,6 +27,7 @@
 
 <script>
 import dayjs from 'dayjs';
+import optimizedImageUrl from '@/lib/optimized-image-url';
 
 export default {
     name: 'PastEvent',
@@ -44,13 +45,7 @@ export default {
         },
 
         imageUrl() {
-          const BASE_URL = 'https://gdgcebu.org';
-          const CLOUDINARY_BASE_URL = 'https://res.cloudinary.com/arnellebalane';
-          const transforms = 'w_555,h_312';
-          const url = [BASE_URL, this.data.image.replace(/^\//, '')].join('/');
-
-          return [CLOUDINARY_BASE_URL, 'image/fetch', transforms, url]
-            .filter(Boolean).join('/');
+            return optimizedImageUrl(this.data.image, ['w_555', 'h_312', 'q_80', 'c_fill']);
         }
     }
 };

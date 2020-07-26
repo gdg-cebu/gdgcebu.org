@@ -1,6 +1,12 @@
 <template>
     <section>
-        <img src="~images/hero-image.jpg" alt="Hero image" loading="lazy" height="1255" width="579">
+        <img
+            :src="imageUrl"
+            alt="Hero image"
+            loading="lazy"
+            height="1255"
+            width="579"
+        >
 
         <div>
             <h1>About us</h1>
@@ -12,8 +18,17 @@
 </template>
 
 <script>
+import optimizedImagUrl from '@/lib/optimized-image-url';
+
 export default {
-    name: 'AboutUsSection'
+    name: 'AboutUsSection',
+
+    computed: {
+        imageUrl() {
+            const imageUrl = require('images/hero-image.jpg');
+            return optimizedImagUrl(imageUrl, ['w_1255', 'h_579', 'q_80', 'c_fill', 'g_south']);
+        }
+    }
 };
 </script>
 
