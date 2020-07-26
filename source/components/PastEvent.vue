@@ -2,7 +2,7 @@
     <article>
         <div class="image" :class="{colorize: data.colorize}">
             <img
-              :src="data.image"
+              :src="imageUrl"
               :alt="data.title"
               loading="lazy"
               width="555"
@@ -41,6 +41,16 @@ export default {
     computed: {
         eventDate() {
             return dayjs(this.data.date).format('MMMM D, YYYY');
+        },
+
+        imageUrl() {
+          const BASE_URL = 'https://gdgcebu.org';
+          const CLOUDINARY_BASE_URL = 'https://res.cloudinary.com/arnellebalane';
+          const transforms = 'w_555,h_312';
+          const url = [BASE_URL, this.data.image.replace(/^\//, '')].join('/');
+
+          return [CLOUDINARY_BASE_URL, 'image/fetch', transforms, url]
+            .filter(Boolean).join('/');
         }
     }
 };
