@@ -1,5 +1,23 @@
 [
   {
+    "title": "#IamRemarkable Week 2020 - GDG/WTM Cebu & The Company Cebu",
+    "description": "#IamRemarkable is a Google initiative empowering women and underrepresented groups to celebrate their achievements in the workplace and beyond.",
+    "date": "2020-11-12",
+    "venue": "Online",
+    "url": "https://www.meetup.com/GDGCebu/events/kwwzzrybcpbqb/",
+    "image": "/static/images/events/iarweek20.jpg",
+    "featured": true
+  },
+  {
+    "title": "Devfest Philippines 2020",
+    "description": "2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases.",
+    "date": "2020-10-17",
+    "venue": "Online",
+    "url": "https://gdg.community.dev/events/details/google-gdg-cebu-presents-devfest-philippines-2020/",
+    "image": "/static/images/events/devfestph20.jpg",
+    "featured": true
+  },
+  {
     "title": "web.dev LIVE Cebu",
     "description": "Learn about what's new in the Web from the recently-concluded web.dev LIVE online conference.",
     "date": "2020-08-01",
@@ -14,6 +32,20 @@
     "venue": "Online",
     "url": "https://www.meetup.com/GDGCebu/events/271797685/",
     "image": "/static/images/events/angular-firebase-on-air.jpg"
+  },
+  {
+    "title": "#IamRemarkable Online Workshop",
+    "date": "2020-06-20",
+    "venue": "Online",
+    "url": "https://www.meetup.com/GDGCebu/events/271306080/",
+    "image": "/static/images/events/iarjune20.jpg"
+  },
+  {
+    "title": "WTM Cebu Online Summit 2020",
+    "date": "2020-03-28",
+    "venue": "Online",
+    "url": "https://www.meetup.com/GDGCebu/events/268709325/",
+    "image": "/static/images/events/wtm20.jpg"
   },
   {
     "title": "GDG DevFest Cebu 2019",
