@@ -38,14 +38,6 @@
     }
   },
   {
-    "name": "Rhodchel Espanola",
-    "role": "Program Associate",
-    "photo": "/static/images/team/rhodchel-espanola.jpg",
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/rhodchel-lhuven-espa%C3%B1ola-746408153/"
-    }
-  },
-  {
     "name": "Francis Jigssy Galua",
     "role": "Volunteers Manager",
     "photo": "/static/images/team/francis-jigssy-galua.jpg",
@@ -61,15 +53,6 @@
     "links": {
       "twitter": "https://twitter.com/corky_john",
       "linkedin": "https://www.linkedin.com/in/john-corky-hunter-876763181/"
-    }
-  },
-  {
-    "name": "Mc James Gulles",
-    "role": "Media Lead",
-    "photo": "/static/images/team/james-gulles.jpg",
-    "links": {
-      "github": "https://github.com/TheWanderer0",
-      "linkedin": "https://www.linkedin.com/in/mc-james-gulles-2b67a8121/"
     }
   },
   {
@@ -93,15 +76,6 @@
     }
   },
   {
-    "name": "Sean Urgel",
-    "role": "Resident Flutter Expert",
-    "photo": "/static/images/team/sean-urgel.jpg",
-    "links": {
-      "github": "https://github.com/SeanningTatum",
-      "linkedin": "https://www.linkedin.com/in/sean-urgel/"
-    }
-  },
-  {
     "name": "Arnelle Balane",
     "role": "Speakers Lead",
     "photo": "/static/images/team/arnelle-balane.jpg",
@@ -109,6 +83,43 @@
       "github": "https://github.com/arnellebalane",
       "twitter": "https://twitter.com/arnellebalane",
       "linkedin": "https://linkedin.com/in/arnellebalane"
+    }
+  },
+  {
+    "name": "Justine Espinosa",
+    "role": "Social Media Lead",
+    "photo": "/static/images/team/justine-espinosa.jpg",
+    "links": {
+      "github": "https://github.com/Justicism15",
+      "linkedin": "https://www.linkedin.com/in/justine-espinosa"
+    }
+  },
+  {
+    "name": "Cleo Credo",
+    "role": "WTM Speakers Lead",
+    "photo": "/static/images/team/cleo-credo.jpg",
+    "links": {
+      "github": "https://github.com/filipinacoder",
+      "twitter": "https://twitter.com/filipinacoder",
+      "linkedin": "https://www.linkedin.com/in/cleocredo"
+    }
+  },
+  {
+    "name": "Timothy Ouano",
+    "role": "Technical Operations",
+    "photo": "/static/images/team/timothy-ouano.jpg",
+    "links": {
+      "github": "https://github.com/timothyouano",
+      "twitter": "https://twitter.com/TimothyOuano",
+      "linkedin": "https://www.linkedin.com/in/timothyouano"
+    }
+  },
+  {
+    "name": "John Paul Madulid",
+    "role": "Technical Operations",
+    "photo": "/static/images/team/jp-madulid.jpg",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/johnpaulmadulid"
     }
   }
 ]
